@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="floatRight">
+        <img src="images/lab1.jpg" class="floatRight">
+    </div>
+    
+    <div class="container">
+        <header>Registration</header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">1.Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full name</label>
+                            <input type="text" placeholder="Full name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Patient ID</label>
+                            <input type="text" placeholder="Patient Id if exists">
+                        </div>
+                        <div class="input-field">
+                            <label>Contact Number</label>
+                            <input type="number" placeholder="contact number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email Id</label>
+                            <input type="text" placeholder="Email id" required>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="details Address">
+                    <span class="title">2.Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>House Number</label>
+                            <input type="text" placeholder="H.No" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street</label>
+                            <input type="text" placeholder="Street" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Area</label>
+                            <input type="text" placeholder="Area" required>
+                        </div>
+                        <div class="input-field">
+                            <label>District</label>
+                            <select name="district" id="district">
+                                <option value="">Choose</option>
+                                <option value="puri">Puri</option>
+                              </select>
+                        </div>
+                         
+                    </div>
+
+                </div>
+                <div class="details test">
+                    <span class="title">3.Choose a test</span>
+                    <div class="input-field">
+                        <label>Test type</label>
+                    <select name="Test" id="Test"  required>
+                        <option value="">Please choose an option</option>
+                        <option value="CBC">CBC</option>
+                        <option value="Complete Urine">Complete Urine</option>
+                        <option value="Lipid Profile">Lipid Profile</option>
+                        <option value="Thyroid Stimulating Hormone(TSH)">Thyroid Stimulating Hormone(TSH)</option>
+                        <option value="Glucose Test">Glucose Test</option>
+                      </select>
+                 </div>
+                </div>
+                <div class="details btn">
+                    <span class="title">4.Do you want a HardCopy of report also?</span>
+                    <div class="btn">
+                        <input type="radio" name="yes"/>Yes</br>
+                        <input type="radio" name="yes"/>No</br>
+                    </div>
+                    
+                </div>
+
+                <div class="details">
+                    <span class="title">5.Specified Time</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Enter Date</label>
+                            <input type="date" placeholder="Enter Date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Enter time</label>
+                            <input type="time" placeholder="Enter the available time" required>
+                        </div>
+                         
+                    </div>
+
+            </div>
+            <button class="button"style="vertical-align:middle">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </button>
+            
+
+        </form>
+    </div>
+</body>
+
+</html>
